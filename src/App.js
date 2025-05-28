@@ -1,6 +1,6 @@
 import React from 'react';
 import {SafeAreaView, Alert} from 'react-native';
-import ReusableForm from './Components/LBButton';
+import ReusableForm from './components/ReusableForm';
 
 const App = () => {
   const handleFormSubmit = ({text, checked}) => {

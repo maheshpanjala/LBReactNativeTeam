@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     padding: 16,
     backgroundColor: '#fff',
     borderRadius: 10,
-    elevation: 2,
+    elevation:  2,
   },
 });
  
