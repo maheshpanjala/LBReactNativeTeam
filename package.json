@@ -10,9 +10,11 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.20",
     "react": "19.0.0",
     "react-native": "0.79.2",
-    "react-native-check-box": "^2.1.7"
+    "react-native-check-box": "^2.1.7",
+    "react-native-paper": "^5.14.5"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",

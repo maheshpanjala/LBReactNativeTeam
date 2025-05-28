@@ -1,12 +1,11 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const commonStyles = StyleSheet.create({
-
   inputContainer: {
     flex: 0,
     padding: 0,
     backgroundColor: '#fff',
-    marginTop:30,
+    marginTop: 30,
   },
   inputLabel: {
     fontSize: 16,
@@ -37,6 +36,12 @@ const commonStyles = StyleSheet.create({
   checkboxLabel: {
     fontSize: 16,
     color: '#333',
+  },
+  container: {
+    padding: 16,
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    elevation: 2,
   },
 });
 
