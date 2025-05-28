@@ -1,20 +1,24 @@
 import React from 'react';
-import { TextInput, View, Text } from 'react-native';
-import styles from '../styles/style';
-
-const LBTextInput = ({ label, value, onChangeText, placeholder, secureTextEntry = false }) => {
-  return (
-    <View style={styles.inputContainer}>
-      {label && <Text style={styles.inputLabel}>{label}</Text>}
-      <TextInput
-        style={styles.inputField}
-        value={value}
-        onChangeText={onChangeText}
-        placeholder={placeholder}
-        secureTextEntry={secureTextEntry}
-      />
-    </View>
-  );
-};
-
+import { TextInput, StyleSheet } from 'react-native';
+ 
+const LBTextInput = ({ value, onChangeText, placeholder }) => (
+  <TextInput
+    style={styles.input}
+    value={value}
+    onChangeText={onChangeText}
+    placeholder={placeholder}
+  />
+);
+ 
+const styles = StyleSheet.create({
+  input: {
+    borderWidth: 1,
+    borderColor: '#aaa',
+    borderRadius: 8,
+    padding: 10,
+    marginBottom: 12,
+  },
+});
+ 
 export default LBTextInput;
+ 

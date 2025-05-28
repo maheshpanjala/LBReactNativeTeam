@@ -1,20 +1,24 @@
 import React from 'react';
-import CheckBox from 'react-native-check-box';
-import { View } from 'react-native';
-import styles from '../styles/style';
-
-const LBCheckBox = ({ isChecked, onClick, label }) => {
-  return (
-    <View style={styles.checkboxContainer}>
-      <CheckBox
-        isChecked={isChecked}
-        onClick={onClick}
-        rightText={label}
-        rightTextStyle={styles.checkboxLabel}
-        checkBoxColor="#007AFF"
-      />
-    </View>
-  );
-};
-
-export default LBCheckBox;
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { Checkbox } from 'react-native-paper';
+ 
+const CCheckbox = ({ label, checked, onToggle }) => (
+  <TouchableOpacity onPress={onToggle} style={styles.container}>
+    <Checkbox status={checked ? 'checked' : 'unchecked'} />
+    <Text style={styles.label}>{label}</Text>
+  </TouchableOpacity>
+);
+ 
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 12,
+  },
+  label: {
+    marginLeft: 8,
+  },
+});
+ 
+export default CCheckbox;
+ 
