@@ -1,7 +1,7 @@
 import React from 'react';
-import { TextInput, StyleSheet } from 'react-native';
- 
-const LBTextInput = ({ value, onChangeText, placeholder }) => (
+import {TextInput, StyleSheet} from 'react-native';
+
+const LBTextInput = ({value, onChangeText, placeholder}) => (
   <TextInput
     style={styles.input}
     value={value}
@@ -9,7 +9,7 @@ const LBTextInput = ({ value, onChangeText, placeholder }) => (
     placeholder={placeholder}
   />
 );
- 
+
 const styles = StyleSheet.create({
   input: {
     borderWidth: 1,
@@ -19,6 +19,5 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
 });
- 
+
 export default LBTextInput;
- 
