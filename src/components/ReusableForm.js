@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button } from 'react-native-paper';
 import LBTextInput from './LBTextInput';
-import CCheckbox from './CCheckbox';
+import CCheckbox from './LBCheckBox';
  
 const ReusableForm = ({
   onSubmit,
@@ -10,6 +10,7 @@ const ReusableForm = ({
   checkboxLabel = 'I agree',
   buttonLabel = 'Submit',
 }) => {
+
   const [text, setText] = useState('');
   const [checked, setChecked] = useState(false);
  

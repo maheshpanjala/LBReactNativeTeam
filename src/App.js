@@ -1,17 +1,19 @@
-import React from 'react';
-import {SafeAreaView, Alert} from 'react-native';
-import ReusableForm from './components/ReusableForm';
+// App.js
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './components/HomePage';
+import DetailsScreen from './components/NewPaage';
 
-const App = () => {
-  const handleFormSubmit = ({text, checked}) => {
-    Alert.alert('Form Submitted', `Text: ${text}, Checked: ${checked}`);
-  };
+const Stack = createNativeStackNavigator();
 
+export default function App() {
   return (
-    <SafeAreaView style={{flex: 1, justifyContent: 'center', padding: 20}}>
-      <ReusableForm onSubmit={handleFormSubmit} />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-};
-
-export default App;
+}
