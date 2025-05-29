@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button } from 'react-native-paper';
 import LBTextInput from './LBTextInput';
-import CCheckbox from './LBCheckBox';
+import CCheckbox1 from './LBCheckBox';
  
 const ReusableForm = ({
   onSubmit,

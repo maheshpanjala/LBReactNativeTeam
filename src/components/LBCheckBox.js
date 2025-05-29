@@ -21,4 +21,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CCheckbox;
+export default CCheckbox1;
