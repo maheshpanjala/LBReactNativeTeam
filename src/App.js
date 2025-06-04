@@ -43,6 +43,6 @@ const App = () => {
       </NavigationContainer>
     </SafeAreaProvider>
   );
-};
+}
 
 export default App;
